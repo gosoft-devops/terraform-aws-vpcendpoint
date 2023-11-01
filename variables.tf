@@ -1,6 +1,7 @@
 variable "tags" {
   type        = any
   description = "Tagging resource"
+  default = {}
 }
 # variable "tag_service" {
 #   type        = string
