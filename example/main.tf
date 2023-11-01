@@ -14,6 +14,8 @@ module "vpc_endpoint" {
   source = "github.com/gosoft-devops/terraform-aws-vpcendpoint?ref=v1.0.0"
 
   vpc_id = ""
+  # enable_security_group = false  ## False when custom Security Group.
+  # security_group_ids = [""]
   vpc_endpoint = {
     s3 = {
       service      = "s3"
